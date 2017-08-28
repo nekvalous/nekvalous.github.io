@@ -1,0 +1,117 @@
+/* ### GENERAL ### */
+h1,h2,h3,h4,h5,h6,pre,code {font-size:1em; outline:none;}
+ul,ol {list-style:none}
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin:0; padding:0}
+fieldset {border:0}
+a {outline: none; color: #000;}
+a.active {font-weight: bold; font-size: 12px;}
+a img,:link img,:visited img {border:none;}
+:link,:visited {text-decoration: underline}
+img {display:block}
+address {font-style:normal}
+.clear {clear:both}
+.nomargin {margin:0}
+@font-face {
+  font-family: webfont;
+  src: url(/font/webfont.eot);
+  src: local(webfont), url(font/webfont.eot?#iefix) format('embedded-opentype'),
+       local(webfont), url(font/webfont.woff) format('woff'),
+       local(webfont), url(font/webfont.ttf) format('truetype'),
+       local(webfont), url(font/webfont.svg#svgFontName) format('svg');
+}
+input, select, textarea {font-family: "webfont", Gill Sans MT, sans-serif; font-size: 12px; color: #444;}
+
+/* ### GLOBAL CLASSES ### */
+html{overflow: -moz-scrollbars-vertical;}
+body, html {background-image:url('../images/bg.jpg'); background-repeat:repeat-x; background-color: #f9f8f6; font-family: "webfont", Gill Sans MT, sans-serif; font-size: 12px; color: #444;}
+
+/* ### CONTAINER ### */
+#container {margin: 0 auto; width: 968px; padding-left: 20px;}
+
+/* ### HEADER ### */
+#header {float: left; margin: 50px 0 44px 0; border-bottom: 1px solid #e0e0e0; width: 940px;}
+#header .title {float: left; width: 660px;}
+#header .title h1 {color: #99CCFF; font-family: Gill Sans MT, sans-serif; font-weight: bold; font-style: italic; font-size: 48px; line-height: 1em;}
+#header .title p {font-size: 16px; line-height: 1.5em; margin-top: 14px; color: #444; margin-bottom: 44px; margin-left: 0px;}
+#header .title strong {text-decoration: underline;}
+#header .vcard {float: right; width: 280px;}
+#header .vcard p {text-align: right; margin-right: 60px; margin-top: 20px;}
+#header .vcard img {float: right; position: absolute; margin-left: 105px; margin-top: 14px;}
+
+/* ### CONTENT ### */
+#content {float: left; max-width: 968px;}
+
+#content ul#item-overview a img{ cursor: pointer; }
+#content li.project {float: left; width: 220px; margin-bottom: 40px; padding-right: 20px;}
+#content li.project h2 {font-size: 14px; padding: 20px 0 10px 0; color: #000;}
+#content li.project p {width: 220px; line-height: 1.6em; padding-bottom: 5px;}
+#content li.project p a {text-decoration: underline;}
+#content li.project span {font-family: "webfont", Gill Sans MT, sans-serif; font-weight: bold; font-style: italic; color: #fff; font-size: 20px; padding-left: 20px;}
+
+#content #item-overview a img{ cursor: pointer; }
+#content .project {float: left; width: 220px; margin-bottom: 40px; padding-right: 20px;}
+#content .project h2 {font-size: 14px; padding: 20px 0 10px 0; color: #000;}
+#content .project p {width: 220px; line-height: 1.6em; padding-bottom: 5px;}
+#content .project p a {text-decoration: underline;}
+#content .project span {font-family: "webfont", Gill Sans MT, sans-serif; font-weight: bold; font-style: italic; color: #fff; font-size: 20px; padding-left: 20px;}
+
+#content .project .back-service1 {background-color: #3399FF; width: 220px; height: 162px; margin-bottom: 7px;}
+
+#content .project p.service1 {height: 162px; padding-bottom: 3px; border-bottom: 1px solid #e0e0e0; border-top: 1px solid #e0e0e0; border-left: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0;}
+#content .project p.service2 {height: 162px; padding-bottom: 3px; border-bottom: 1px solid #e0e0e0;}
+#content .project a.grey {background-color: #99CCFF; display: block; width: 220px; height: 162px; text-decoration: none;}
+#content .project a.panel {background-image:url('../images/panel.png'); display: block; width: 220px; height: 162px; text-decoration: none;}
+
+#content .project a img {display: none;}
+#content .project a:hover {background: none;}
+#content .project a:hover img {display: block;}
+
+#content .project-images {float: right; margin-bottom: 19px; width: 720px;}
+#content .project-images img {padding-bottom: 25px;}
+
+#content .line {float: left; border-bottom: 1px solid #32322D; width: 968px; height: 5px;}
+
+/* ### FOOTER ### */
+#footer {float: left; margin-right: -20px; border-top: 1px solid #e0e0e0;}
+#footer .top {padding: 70px 0 190px 0; margin-right: -20px;}
+#footer .top .list {float: left; width: 240px; padding-bottom: 70px; color: #999;}
+#footer .top .list h3 {color: #0066CC; font-size: 14px; padding-bottom: 10px;}
+#footer .top .list ul li {padding-bottom: 4px;}
+#footer .top .list p {padding-bottom: 4px; color: #999;}
+#footer .top .list ul#status {list-style-type: disc; margin-left: 15px;}
+#footer .top .list a {color: #999;}
+#footer .top .list a:hover {text-decoration: underline;}
+#footer .top .list span {text-decoration: line-through;}
+
+#footer .contact {float: left; width: 940px; color: #999; padding-top: 44px; border-top: 1px solid #e0e0e0;}
+#footer .contact p {line-height: 1.6em; margin-bottom: 6px;}
+#footer .contact .form {float: left; width: 460px; margin-right: 20px; padding-bottom: 40px;}
+#footer .contact .form span {margin-left: 10px;}
+#footer .contact .form fieldset {overflow: hidden; width: 320px; border: 0px; color: #444; }
+#footer .contact .form input.field {margin-bottom: 10px; padding: 4px 5px 0px 5px; float: left; width: 168px; height: 22px; border: 1px solid #e0e0e0; background: #fff;}
+#footer .contact .form input.submit {color: #444; background: #f9f8f6; border: 1px solid #e0e0e0;}
+#footer .contact .form label {margin-bottom: 10px; padding-left: 15px; float: left; width: 125px; height: 28px; line-height: 28px; }
+#footer .contact .form label.large {margin-bottom: 5px; padding: 0px; width: 320px; }
+#footer .contact .form textarea {margin-bottom: 15px; padding: 4px 5px 4px 5px; width: 308px; height: 120px; border: 1px solid #e0e0e0; background: #fff; }
+#footer .contact .map {float left: width 960px;}
+
+#footer .bottom {float: left; color: #999; padding: 22px 0 22px 0; border-top: 1px solid #e0e0e0; width: 940px;}
+
+/* ### ELEMENTS ### */
+h1 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-weight: bold; font-style: italic; font-size: 48px; line-height: 1em; padding-bottom: 10px;}
+h2 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-weight: bold; font-size: 14px; line-height: 1em; padding-bottom: 10px;}
+h3 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-size: 14px; line-height: 1em; padding-bottom: 10px;}
+h4 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-size: 13px; line-height: 1em; padding-bottom: 10px;}
+h5 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-size: 12px; line-height: 1em; padding-bottom: 10px;}
+h6 {color: #000; font-family: "webfont", Gill Sans MT, sans-serif; font-size: 11px; line-height: 1em; padding-bottom: 10px;}
+hr {border: 1px solid #e0e0e0; color: #e0e0e0; margin-top: 10px; margin-bottom: 10px;}
+p {font-family: "webfont", Gill Sans MT, sans-serif; font-size: 12px; color: #444; padding-bottom: 10px;}
+small {font-family: "webfont", Gill Sans MT, sans-serif; font-size: 10px; color: #000;}
+a {color: #000;}
+a:hover {text-decoration: underline;}
+em {font-weight: bold;}
+dl {margin: 10px;}
+ol {margin: 10px;}
+input {border: 1px solid #e0e0e0; padding: 5px;}
+table tr td {padding: 10px;}
+blockquote {border: 1px solid #999; padding: 20px;}
