@@ -128,7 +128,7 @@ p.inverse {
   line-height: 1.6;
 }
 a {
-  color: #42a5f5;
+  color: #D27D2D;
   text-decoration: none;
   will-change: color;
   -webkit-transition: color 370ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -384,7 +384,7 @@ hr {
   width: 272px;
 }
 .card .card-media {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.10);
   display: block;
   overflow: hidden;
   padding: 0;
@@ -458,7 +458,7 @@ button {
   border-radius: 3px;
 }
 .button {
-  background-color: #42a5f5;
+  background-color: #D27D2D;
   border-radius: 3px;
   -o-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.14);
@@ -495,7 +495,7 @@ button {
 .button.flat {
   background-color: transparent;
   box-shadow: none;
-  color: #42a5f5;
+  color: #D27D2D;
 }
 .button.flat:hover,
 .button.flat:focus,
@@ -504,7 +504,7 @@ button {
   background-color: transparent;
   box-shadow: none;
   outline: none;
-  color: #42a5f5;
+  color: #D27D2D;
 }
 .button.flat.secondary {
   color: #757575;
@@ -565,8 +565,8 @@ button {
   box-shadow: none;
 }
 .button.hollow {
-  border: 1px solid #42a5f5;
-  color: #42a5f5;
+  border: 1px solid #D27D2D;
+  color: #D27D2D;
 }
 .button.hollow.secondary {
   border: 1px solid #757575;
@@ -613,7 +613,7 @@ button {
 }
 /* Label */
 .label {
-  background-color: #42a5f5;
+  background-color: #D27D2D;
 }
 .label.secondary {
   background-color: #757575;
@@ -1123,9 +1123,9 @@ table.hover tr:nth-of-type(even):hover {
     background: #f5f5f5;
   }
   .top-bar .menu li a::after {
-    background-image: -webkit-linear-gradient(to right, #90caf9, #2979ff);
-    background-image: -webkit-linear-gradient(left, #90caf9, #2979ff);
-    background-image: linear-gradient(to right, #90caf9, #2979ff);
+    background-image: -webkit-linear-gradient(to right, #FFBF00, #B87333);
+    background-image: -webkit-linear-gradient(left, #FFBF00, #B87333);
+    background-image: linear-gradient(to right, #FFBF00, #B87333);
     -webkit-transition: max-width 0.2s ease;
     transition: max-width 0.2s ease;
     max-width: 0;
@@ -1444,7 +1444,7 @@ table.hover tr:nth-of-type(even):hover {
   max-width: 0;
 }
 .filter-link.is-checked {
-  color: #42a5f5;
+  color: #D27D2D;
 }
 .filter-link.is-checked::after {
   max-width: 100%;
@@ -1838,7 +1838,7 @@ table.hover tr:nth-of-type(even):hover {
   margin-bottom: 0;
 }
 .pricing-table.recommended {
-  border-color: #42a5f5;
+  border-color: #D27D2D;
 }
 /* Latest Tweets
 =================================================== */
