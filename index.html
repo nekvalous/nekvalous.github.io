@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html class="no-js" lang="en">
+
 	<head>
 	
 		<!-- Google tag (gtag.js) -->
@@ -40,7 +40,79 @@
 		
 		<script src="js/vendor/modernizr.js"></script>
 		
+		<style id="spacing-tweak">
+			/* Minimal space after Contact */
+			#about.section { padding-bottom: 6px !important; }
+			#contact.section { padding-top: 8px !important; margin-top: 0 !important; padding-bottom: 0 !important; }
+			.footer { margin-top: 0 !important; padding-top: 0 !important; }
+		</style>
+		
+		<style id="contact-grid-style">
+			#contact .contact-grid {
+				display: grid;
+				gap: 16px;
+				grid-template-columns: 1fr; /* mobile default */
+			}
+			@media (min-width: 640px) {
+				#contact .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+			}
+			@media (min-width: 900px) {
+				/* ensure first row has 3 columns: E-mail, Twitter, Bluesky */
+				#contact .contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+			}
+			#contact .contact-item .term {
+				font-weight: 600;
+				margin-bottom: 4px;
+				line-height: 1.3;
+			}
+			#contact .contact-item .value {
+				line-height: 1.5;
+				word-break: break-word;
+			}
+		</style>
+
+		<style id="footer-tweak">
+			/* Smaller, centered footer */
+			.footer { padding-top: 6px !important; padding-bottom: 6px !important; }
+			.footer .medium-6.columns {
+				width: 100% !important;
+				max-width: 100% !important;
+				float: none !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+				text-align: center !important;
+			}
+			.footer .copyright {
+				margin: 0 !important;
+				font-size: 0.9rem !important;
+				line-height: 1.3 !important;
+			}
+		</style>
+
+		<style id="contact-font-tweak">
+			/* Slightly smaller font for the Contact section */
+			#contact { font-size: 0.9rem !important; }
+			#contact .contact-item .term { font-size: 0.95em !important; }
+			#contact .contact-item .value { font-size: 0.95em !important; }
+		</style>
+
+		<style id="contact-center-tweak">
+			/* Center the Contact section */
+			#contact .row { justify-content: center; }
+			#contact address.address { display: block; margin-left: auto; margin-right: auto; }
+			#contact .contact-grid { justify-items: center; text-align: center; }
+			#contact .contact-item { text-align: center; }
+			#contact .contact-item .term { justify-self: center; }
+		</style>
+
+		<style id="contact-bottom-trim">
+			#contact .contact-grid,
+			#contact .contact-item:last-child,
+			#contact address.address { margin-bottom: 0 !important; }
+		</style>
+	
 	</head>
+	
 	<body>
 		
 		<!-- Header wrap -->
@@ -105,59 +177,62 @@
 								<figure class="figure card-media">
 									<img src="img/avatar.png" alt="My avatar">
 								</figure>
-							</div>
+							</div>	
 						</div>
 						<div class="medium-7 columns">
 							<h4 class="section-title">About</h4>
 							<p>I am working at the <a href="https://www.dkfz.de/en/angewandte-tumor-immunitaet/Applied-Tumor-Immunity/Team.html" TARGET='_blank'>German Cancer Research Center (DKFZ)</a> and the <a href="https://www.nct-heidelberg.de/das-nct/kernbereiche/medizinische-onkologie/mitarbeiterinnen-und-mitarbeiter.html" TARGET='_blank'>National Center for Tumor Diseases (NCT) Heidelberg</a>. I am located at the Center for Quantitative Analysis of Molecular and Cellular Biosystems (<a href="https://www.bioquant.uni-heidelberg.de/people" TARGET='_blank'>Bioquant</a>).</p>
-							<p>I am <a href="https://www.immunoinformaticsjournal.com/content/founding-editors" target="_blank">founding editor</a> and <a href="https://www.sciencedirect.com/journal/immunoinformatics/about/editorial-board" target="_blank">executive editor</a> of the peer-reviewed journal <a href="https://www.sciencedirect.com/journal/immunoinformatics" target="_blank">ImmunoInformatics</a> (Elsevier).</p>
-							<p>You can check my profile on: <a href="https://scholar.google.de/citations?hl=en&user=1pGFvGMAAAAJ&view_op=list_works&sortby=pubdate&cstart=0&pagesize=100" target="_blank">Google Scholar</a>,
+							<p>I am <a href="https://www.immunoinformaticsjournal.com/content/founding-editors" target="_blank">founding editor</a> and <a href="https://www.sciencedirect.com/journal/immunoinformatics/about/editorial-board" target="_blank">executive editor</a> of the open access peer-reviewed journal <a href="https://www.sciencedirect.com/journal/immunoinformatics" target="_blank">ImmunoInformatics</a> (Elsevier).</p>
+							<p>You can check my profile on: <a href="https://www.linkedin.com/in/nekvalous" target="_blank">LinkedIn</a>,
+															<a href="https://scholar.google.de/citations?hl=en&user=1pGFvGMAAAAJ&view_op=list_works&sortby=pubdate&cstart=0&pagesize=100" target="_blank">Google Scholar</a>,
 															<a href="https://www.researchgate.net/profile/Nek-Valous" target="_blank">ResearchGate</a>,
-															<a href="https://www.linkedin.com/in/nekvalous" target="_blank">LinkedIn</a>,
 															<a href="https://orcid.org/0000-0002-4014-2404" target="_blank">ORCID</a>,
 															<a href="https://www.scopus.com/authid/detail.uri?authorId=24605434500" target="_blank">Scopus</a>, and
 															<a href="https://www.webofscience.com/wos/author/rid/J-2032-2015" target="_blank">Web of Science</a>.</p>
 							<p>I am a hobbyist <a href="https://www.nek.photos" TARGET='_blank'>photographer</a>.</p>
 							</div>
 					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="medium-12 columns">
+							<h4 class="section-title">Recent publications</h4>
+							<p>Novel computational workflows for natural and biomedical image processing based on hypercomplex algebras<br>
+								<a href="https://arxiv.org/abs/2502.07758" target="_blank">Preprint link</a> ·
+								<a href="https://arxiv.org/pdf/2502.07758" target="_blank">PDF link</a> ·
+								<a href="https://doi.org/10.6084/m9.figshare.29683382" target="_blank">Python and MATLAB code</a>
+							<p>Isolation of a tumor neoantigen specific CD8+ TCR from a skin biopsy of a vaccination site<br>
+								<a href="https://doi.org/10.1080/2162402X.2025.2457793" target="_blank">Article link</a> ·
+								<a href="https://www.tandfonline.com/doi/epdf/10.1080/2162402X.2025.2457793" target="_blank">PDF link</a> ·
+								<a href="https://www.tandfonline.com/doi/full/10.1080/2162402X.2025.2457793#supplemental-material-section" target="_blank">Supplemental material</a>
+							</p>
+							<p>Graph machine learning for integrated multi-omics analysis<br>
+								<a href="https://doi.org/10.1038/s41416-024-02706-7" target="_blank">Article link</a> ·
+								<a href="https://www.nature.com/articles/s41416-024-02706-7.pdf" target="_blank">PDF link</a>
+							</p>
+						</div>
+					</div>
 				</section>
 				
 				<!-- Section Contact -->
 				<section id="contact" class="section contact">
 					<div class="row flex flex-bottom">
-						<div class="large-4 columns">
-							<address class="address">
-								<dl class="row">
-									<dt class="dt-name medium-3 columns">E-mail</dt>
-									<dd class="dd-value medium-9 columns">
-										nek (dot) valous (at) nct-heidelberg (dot) de
-										<br>
-										nvll (at) usa (dot) net
-									</dd>
-									<dt class="dt-name medium-3 columns">Twitter</dt>
-									<dd class="dd-value medium-9 columns">
-										<a href="https://twitter.com/nekvalous" target="_blank">@nekvalous</a>
-									</dd>
-									<dt class="dt-name medium-3 columns">Bluesky</dt>
-									<dd class="dd-value medium-9 columns">
-										<a href="https://bsky.app/profile/nekvalous.bsky.social" target="_blank">@nekvalous.bsky.social</a>
-									</dd>
-									<dt class="dt-name medium-3 columns">Facebook</dt>
-									<dd class="dd-value medium-9 columns">
-										<a href="https://www.facebook.com/nekvalous/" target="_blank">nekvalous</a>
-									</dd>
-									</dd>
-									<dt class="dt-name medium-3 columns">Instagram</dt>
-									<dd class="dd-value medium-9 columns">
-										<a href="https://www.instagram.com/nekvalous/" target="_blank">nekvalous</a>
-									</dd>
-									<dt class="dt-name medium-3 columns">Threads</dt>
-									<dd class="dd-value medium-9 columns">
-										<a href="https://www.threads.net/@nekvalous" target="_blank">@nekvalous</a>
-									</dd>
-									
-								</dl>
-							</address>
+						<div class="large-12 columns">
+							<address class="address"><div class="contact-grid">
+						<div class="contact-item">
+							<div class="term">E-mail</div>
+							<div class="value">nek[dot]valous[at]nct-heidelberg[dot]de</div>
+						</div>
+						<div class="contact-item">
+							<div class="term">X</div>
+							<div class="value"><a href="https://x.com/nekvalous" target="_blank">https://x.com/nekvalous</a></div>
+						</div>
+						<div class="contact-item">
+							<div class="term">Instagram</div>
+							<div class="value"><a href="https://www.instagram.com/nekvalous/" target="_blank">https://www.instagram.com/nekvalous/</a></div>
+						</div>
+							</div>
+						</address>
 						</div>
 					</div>
 				</section>
@@ -167,20 +242,17 @@
 			<footer class="footer">
 				<div class="row">
 					<div class="medium-6 columns">
-						<p class="copyright">&copy; <time datetime="2025">2025</time> Nektarios Valous</p>
+						<p class="copyright">&copy; <time datetime="2025">2017-2025</time> &nbsp; | &nbsp; Nektarios Valous</p>
 					</div>
 				</div>
 			</footer>
 			
-			
-		</div><!-- /.main wrap -->
+		</div>
 	
-		<!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
 		<script src="js/vendor/foundation.min.js"></script>
-		
 		<script src="js/vendor/ripple.min.js"></script>
 		<script src="js/vendor/jquery.appear.js"></script>	
 		<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
@@ -189,10 +261,9 @@
 		<script src="js/vendor/jquery.countTo.js"></script>
 		<script src="js/vendor/magnific-popup.min.js"></script>
 		<script src="js/vendor/jquery.tweet.min.js"></script>
-		
 		<script src="js/main.js"></script>
 		<script src="js/contact.js"></script>
 		
-		
 	</body>
+	
 </html>
