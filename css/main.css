@@ -1,61 +1,3 @@
-/* Table of Contents
-=================================================== */
-/*
- * Default
-		* Titles
-		* Flexbox
- * Preloader
- * Components
-		* Cards
-		* Buttons
-		* Labels
-		* Icon Box
-		* Breadcrumbs
-		* Pagination
-		* Magnific Popup
-		* Accordion
-		* Tables
-		* Callout
-		* Progress bars
-		* Slider
-		* Slick Slider
-		* Definition list
-		* Ripple
- * Layout
-		* Header wrap, Main wrap
-		* Table wrap
- * Header
- * Navbar
- * Main
-		* Section
- * Social List
- * Home
- * Counters
- * About
- * Skills
- * Services
- * Resume
- * Testimonials
- * Portfolio
-		* Masonry
-		* Filter
- * Brands
- * Blog
-		* Meta
-		* Post
-		* Tags
-		* Comments
-		* Widgets
- * Call To Action
- * Pricing
- * Latest Tweets
- * Contact
- * Footer
- * Project
- * Input
-*/
-/* Default
-=================================================== */
 html,
 body {
   margin: 0;
@@ -408,6 +350,9 @@ hr {
   flex: 0 0 auto;
 }
 .card .card-media img {
+  display: block;
+  width: 100%;
+  height: auto;
   opacity: 0.9;
 }
 .card .card-header {
